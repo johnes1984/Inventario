@@ -1,0 +1,25 @@
+
+        <form name="clienteform">
+            <div class="form-group">
+            <h1>{{message}}</h1>
+                <label for="cedula">Cedula</label>
+                <input type="text" id="cedula" name="cedula"  ng-model="clientes.cedula" required>
+                <span   ng-show="!clienteform.$pristine && clienteform.cedula.$error.required">cedula obligatoria.</span>
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombre"  ng-model="clientes.nombre" required>
+                 <span   ng-show="!clienteform.$pristine && clienteform.nombre.$error.required">ombre obligatoria.</span>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos"  ng-model="clientes.apellidos" required>
+                 <span   ng-show="!clienteform.$pristine && clienteform.apellidos.$error.required">apellidos obligatoria.</span>
+                <label for="direccion">Direccion</label>
+                <input type="text" id="direccion" name="direccion">
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" name="telefono">
+                <label for="correo">Correo</label>
+                <input type="text" id="correo" name="correo">
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" name="celular">
+            </div>
+        <input type="submit" class="btn btn-success pull-right" ng-click="myfuncion(clientes)" ng-disabled="!clienteform.$valid">
+       
+        </form>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost/Inventario/Subgroups -->
+<
+<head>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+
+<title>
+
+</title>
+
+
+
+	
+<link href="http://localhost/Inventario/favicon.ico" type="image/x-icon" rel="icon">
+<link href="http://localhost/Inventario/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="./Inventario_files/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./Inventario_files/bootstrap-cerulean.css">
+<link rel="stylesheet" type="text/css" href="./Inventario_files/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" href="./Inventario_files/datepicker.css">
+<link rel="stylesheet" type="text/css" href="./Inventario_files/datetimepicker.css">
+
+<script type="text/javascript" src="./Inventario_files/jquery.min.js.descarga"></script>
+<script type="text/javascript" src="./Inventario_files/jquery-ui.min.js.descarga"></script>
+<script type="text/javascript" src="./Inventario_files/jquery.form.js.descarga"></script>
+<script type="text/javascript" src="./Inventario_files/menu.js.descarga"></script>
+<script type="text/javascript" src="./Inventario_files/parsley.js.descarga"></script>
+<!-- <script type="text/javascript" src="./Inventario_files/angular.min.js.descarga"></script>  -->      
+
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
+<script type="text/javascript" src="./js/clientes.js"></script>
+
+ 
+
+</head>
+
+<body ng-app="prueba">
+    
+ 
+    <div id="wrap">
+            <!--Menu-->
+    <header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a href="#" class="brand">Inventario / Usuario: </a>            
+            
+            <div class="nav-collapse">
+                <ul class="nav pull-left">
+                    <button id="view-navbar" class="btn btn-navbar" type="button" style="display: inline">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </ul>
+                <ul class="nav pull-right">
+                    <li>
+                        <a href="#">Salir</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+</header>
+            
+
+
+    <nav class="navbar-inverse sidebar">
+    <div class="navbar-inner">
+        <ul id="sidebar-menu" class="nav nav-stacked">
+                              
+                    
+        <li class="dropdown-submenu">
+            <a href="#" title="Opciones" class="menu-extermal hasChild dropdown-close sidebar-item">
+                <i class="icon-white icon-large"></i>
+                <span>Tablas Maestras</span>
+            </a>                        
+                
+                <ul class="nav nav-stacked sub-nav submenu-extermal dropdown-menu">  
+                    <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Compradores</span>
+                        </a>                            
+                    </li>                                    
+                    <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Grupos</span>
+                        </a>                            
+                    </li>                                                                 
+                    <li>          
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Subgrupos</span>
+                        </a>                            
+                    </li>
+                                                                                                                            
+                    <li>          
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Productos</span>
+                        </a>                            
+                    </li>
+                    <li>          
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Tallas</span>
+                        </a>                            
+                    </li>
+                </ul>             
+            </li>
+            
+            
+            <li class="dropdown-submenu">
+            <a href="#" title="Opciones" class="menu-extermal hasChild dropdown-close sidebar-item">
+                <i class="icon-white icon-large"></i>
+                <span>Procesos Entrada</span>
+            </a>                        
+                <ul class="nav nav-stacked sub-nav submenu-extermal dropdown-menu">                                    
+                    
+                    <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Saldo Inicial</span>
+                        </a>                            
+                    </li>  
+                    <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Entrada Remision</span>
+                        </a>                            
+                    </li> 
+                     <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Devoluciones</span>
+                        </a>                            
+                    </li>  
+                     <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Ajuste Entrada</span>
+                        </a>                            
+                    </li>   
+                    
+                    
+                    
+                    
+                 </ul>
+            </li>
+        
+
+        <li class="dropdown-submenu">
+            <a href="#" title="Opciones" class="menu-extermal hasChild dropdown-close sidebar-item">
+                <i class="icon-white icon-large"></i>
+                <span>Procesos Salida</span>
+            </a>                        
+                <ul class="nav nav-stacked sub-nav submenu-extermal dropdown-menu">                                    
+                    
+                    <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Facturacion</span>
+                        </a>                            
+                    </li>  
+                    <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Prestamos</span>
+                        </a>                            
+                    </li> 
+                     <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Ajustes de Salida</span>
+                        </a>                            
+                    </li>  
+                     <li>
+                        <a href="#" class="menu-list sidebar-item">
+                            <i class="icon-white icon-large"></i>
+                            <span>Salida Traslados</span>
+                        </a>                            
+                    </li>   
+                                    
+                 </ul>
+            </li> 
+      
+        </ul>
+    </div>
+        
+        
+        
+</nav>
+           
+            
+            
+
+            
+            
+            
+           
+
+            <div  id="content-container" class="container-fluid">
+                <div class="row-fluid">               
+                    <div id="content">   
+                        <div class="container">
+
+
+    
+            <div  ng-controller='mainController'> 
+
+            <div ng-view>
+        
+
+
+
+            </div>
+
+            </div>
+
+
+
+
+
+
+                        </div>                  
+                    </div>  
+                </div>
+            </div>
+
+
+
+
+
+<footer class="navbar">
+    <div class="navbar-inner">
+        <div class="footer-content">
+            Inventarios Suelas AX
+       </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
