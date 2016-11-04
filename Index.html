@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0037)http://localhost/Inventario/Subgroups -->
-<
+
 <head>
 
 <meta charset="utf-8">
@@ -37,7 +37,10 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
-<script type="text/javascript" src="./js/clientes.js"></script>
+
+<script type="text/javascript" src="./js/Controladores/Index/IndexController.js"></script>
+<script type="text/javascript" src="./js/Controladores/Clientes/ClientesController.js"></script>
+
 
  
 
@@ -47,6 +50,7 @@
     
  
     <div id="wrap">
+
             <!--Menu-->
     <header class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -88,9 +92,9 @@
                 
                 <ul class="nav nav-stacked sub-nav submenu-extermal dropdown-menu">  
                     <li>
-                        <a href="#" class="menu-list sidebar-item">
+                        <a href="./#/clientes" class="menu-list sidebar-item">
                             <i class="icon-white icon-large"></i>
-                            <span>Compradores</span>
+                            <span>Clientes</span>
                         </a>                            
                     </li>                                    
                     <li>
@@ -218,7 +222,7 @@
 
 
     
-            <div  ng-controller='mainController'> 
+           
 
             <div ng-view>
         
@@ -227,7 +231,7 @@
 
             </div>
 
-            </div>
+           
 
 
 
@@ -246,7 +250,7 @@
 <footer class="navbar">
     <div class="navbar-inner">
         <div class="footer-content">
-            Inventarios Suelas AX
+            Inventarios 
        </div>
     </div>
 </footer>
