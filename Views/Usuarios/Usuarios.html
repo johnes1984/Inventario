@@ -1,0 +1,30 @@
+
+ <div  ng-controller='UsuariosController'> 
+       
+        <form name="Usuariosform">
+            <div class="form-group">
+            <h1>{{message}}</h1>
+
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre"  ng-model="usuarios.nombre" required>
+                <span   ng-show="!Usuariosform.$pristine && Usuariosform.nombre.$error.required">nombre obligatoria.</span>
+                
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"  ng-model="usuarios.email" required>
+                <span   ng-show="!Usuariosform.$pristine && Usuariosform.email.$error.required">email obligatoria.</span>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"  ng-model="usuarios.password" required>
+                <span   ng-show="!Usuariosform.$pristine && Usuariosform.password.$error.required">password obligatoria.</span>
+                
+                <label for="fechanac">Fecha Nacimiento</label>
+                <input type="text" id="fechanac" name="fechanac" ng-model="usuarios.fechanac" required>
+                <span   ng-show="!Usuariosform.$pristine && Usuariosform.fechanac.$error.required">Fecha Nacimiento obligatoria.</span>
+
+                
+            </div>
+        <input type="submit" class="btn btn-success pull-right" ng-click="Guardar(usuarios)" ng-disabled="!Usuariosform.$valid">
+       
+        </form>
+        </div>

@@ -10,6 +10,12 @@ app.config(function($routeProvider) {
             templateUrl : 'Views/Clientes.html',
             controller  : 'ClientesController'
         })
+        .when('/usuarios/list', {
+            templateUrl : 'Views/Usuarios/list.html'
+        })
+         .when('/usuarios/add', {
+            templateUrl : 'Views/Usuarios/Usuarios.html'
+        })
         .when('/acerca', {
             templateUrl : 'Views/acerca.html',
             controller  : 'Controladores/aboutController'
